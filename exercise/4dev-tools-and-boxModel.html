@@ -42,8 +42,8 @@ background-color: rgb(55, 136, 55);
 color: white;
 border: none;
 font-size: 18px;
-padding-top: 4px;
-padding-bottom: 4px;
+padding-top: 7px;
+padding-bottom: 7px;
 padding-right: 12px;
 padding-left: 12px;
 margin-left: 30px;
@@ -53,6 +53,28 @@ transition:box-shadow 1s ;
 
 .button-shadow:active{
 box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.27);
+}
+
+.button-pad-magin{
+background-color: rgb(55, 136, 55);
+color: white;
+border: none;
+font-size: 18px;
+padding-top: 7px;
+padding-bottom: 7px;
+padding-right: 12px;
+padding-left: 12px;
+margin-left: 12px;
+cursor: pointer;
+transition:padding-right 0.15s,
+padding-left 0.15s,
+margin-left 0.15s;
+}
+
+.button-pad-magin:hover{
+padding-right: 19px;
+padding-left: 19px;
+margin-left: 10px;
 }
 </style>
 
@@ -66,3 +88,6 @@ box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.27);
 <button class="button-next">Next</button>
 <button class="button-stretch">Stretch</button>
 <button class="button-shadow">Shadow</button>
+<button class="button-pad-magin">One</button>
+<button class="button-pad-magin">Two</button>
+<button class="button-pad-magin">Three</button>
