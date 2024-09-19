@@ -30,14 +30,9 @@
         vertical-align: top; /* allows the div section (the two images) to align properly on the top*/
         margin-right: 15px;
       }
-      .channel-picture {
-        display: inline-block;
-        width: 50px;
-        vertical-align: top;
-      }
-      .video-info {
-        display: inline-block;
-        width: 200px;
+      .video-info-grid {
+        display: grid;
+        grid-template-columns: 50px 1fr;
       }
       .profile-picture {
         width: 40px;
@@ -69,7 +64,7 @@
       <div class="thumbnail-row">
         <img class="thumbnails" src="./thumbnails/thumbnail-1.webp" alt="" />
       </div>
-      <div>
+      <div class="video-info-grid">
         <div class="channel-picture">
           <img
             class="profile-picture"
@@ -86,11 +81,13 @@
         </div>
       </div>
     </div>
+
+
     <div class="video-preview">
       <div class="thumbnail-row">
         <img class="thumbnails" src="./thumbnails/thumbnail-2.webp" alt="" />
       </div>
-      <div>
+      <div class="video-info-grid">
         <div class="channel-picture">
           <img
             class="profile-picture"
