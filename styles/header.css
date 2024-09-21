@@ -38,7 +38,7 @@
   border-style: bold;
   border-color: rgb(192, 192, 192);
   border-radius: 2px;
-  box-shadow: inset 1px 2px 3px rgb(0, 0, 0, 0.05);
+  box-shadow: inset 1px 2px 3px rgba(48, 29, 29, 0.05);
   /*search bar has a default width, set width to 0 to make it shrink */
   width: 0px;
 }
