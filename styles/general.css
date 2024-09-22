@@ -8,6 +8,8 @@
 body {
 margin: 0;
 padding-top: 80px;
+/* padding  prevented the sidebar from covering the body image*/
+padding-left: 80px;
 border-bottom-width: 1px;
 border-bottom-style: solid;
 border-bottom-color: rgb(234, 234, 234);
