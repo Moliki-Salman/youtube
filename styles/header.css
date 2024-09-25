@@ -7,7 +7,11 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 100; /* makes the header appear ontop of of other elements while scrolling the page up*/
   background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(228, 228, 228);
 }
 
 .left-section {
@@ -101,6 +105,26 @@
 
 .notification-icons {
   height: 24px;
+}
+
+.notifications-icon-container {
+  position: relative;
+}
+
+.notifications-count {
+  position: absolute;
+  top: -2px; /* the negative values made the red element on the bell to move ablove the element*/
+  right: -5px;
+  background-color: red;
+  color: white;
+  font-family: Roboto, Arial;
+  font-size: 11px;
+padding-right: 5px;
+padding-left: 5px;
+padding-top: 2px;
+padding-bottom: 2px;
+border-radius: 10px;
+
 }
 .current-user-picture {
   height: 32px;
