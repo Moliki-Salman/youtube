@@ -8,7 +8,7 @@
 
 <!-- LESSON 2 CSS -->
 <!-- pixels : image sizes, video sizes and screen sizes are measured in pixels.  -->
- <!-- border-radius: takes a px measurement
+<!-- border-radius: takes a px measurement
   border-style: solid: gives the border color an accurate color -->
 <!-- MARGIN:in CSS,space around an element is called margin -->
 <!-- to get a very round shaped circle edges ,divide the height or width of the shape by 2 and give the result to the border-radius,
@@ -20,7 +20,7 @@ eg, if the height is 2opx, border-radius will be 10px
 
 <!-- Active: this allows to give various design to an element when you click on the element -->
 
- <!-- opacity: is used to fade out an element, it takes value btwn 0 and 1,1 means the element is in a normal state
+<!-- opacity: is used to fade out an element, it takes value btwn 0 and 1,1 means the element is in a normal state
 by decreasing the value of opacity from 1, the element starts to fade -->
 
 <!-- Transition: it allows to transition between different styles done on an element, it allows the changes done with pseduo class
@@ -33,7 +33,7 @@ second value is the vertical position of the shadow, the third value makes the s
 <!-- rgba: this is a way of setting the opacity of the color, how see through a color can be  -->
 
 <!-- LESSON 4 Chrome Dev tools and CSS Box Model -->
- <!-- Chrome Dev tools -->
+<!-- Chrome Dev tools -->
 <!--ARROW: on a website, click on inspect and you will see an arrow key beside ELEMENT, when you click  onit
  and then click on anywhere you want to inspect, it highlights the part you click on the HTML element code -->
 <!-- HEX: this is another way of measuring COLOR: for example #1d9bf0,
@@ -65,7 +65,7 @@ second value is the vertical position of the shadow, the third value makes the s
 <!-- CSS specificity:CSS give more priorityto a class name selector than an element name selector
  -->
 
- <!-- text element: this is an element that is inside a text, when you add a text element in side a specific element inside a  text  it changes
+<!-- text element: this is an element that is inside a text, when you add a text element in side a specific element inside a  text  it changes
    eg "strong" makes the element bold  -->
 <!-- <span></span>: is an element that is generic, it has no style, the span is useful becos, we can give a class. the span helps modify a specific part
 of the element without the whole/entire element -->
@@ -132,6 +132,13 @@ flex: 1is the equivalnet to 1fr in grid; flex: 2 is the equivalnet to 2fr in gri
 <!-- The element of a div below can move on top of an element of a div above; generally the element that is written below will appear in front of elements that are above -->
 
 <!-- z-index:  this determins which element appear in front and behind, by default  is  z-index:0,
- but an element id higher z-index will appear in front;  -->
+ but an element id higher z-index will appear in front;
+ SET Z-index of HEADERS TO 100PX : so we can have alot of element in between if our page has alot of layers -->
 
- <!-- NOTE, whenever a position abolute is placed inside a fixed element , it will placed relate to the fixed element, meaning if you set top:0 on absolute, it will set as fixed to the  -->
+<!-- NOTE: MOST TIMES, POSITION ABSOLUTE IS USUALLY PLACED INSIDE A POSITION FIXED ,
+  whenever a position abolute is placed inside a fixed element , it will be relate to the fixed elements in position fixed i.e not exceed,
+  meaning if you set top:0 on absolute, it will set as fixed to the LENGTH OF the position fixed -->
+
+  <!-- position: relative: cause the element to display normally"
+   when position absolute is put on top of position relative, the  item will be  in a fixed position on top of the element that has relative position  and not on top the page and
+   position relative causes the entire element to display normally.  -->
