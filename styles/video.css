@@ -42,6 +42,26 @@
   column-gap: 16px;
   row-gap: 40px;
 }
+/*responsive with media query*/
+/* this will active when the screen sixe is less than 750px, this for only 2 colums based on the no of 1fr*/
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/*4 vidoes when the screen sixe gets big, minimum width of a 1000px*/
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
 
 .video-time {
   font-family: Roboto, Arial;
