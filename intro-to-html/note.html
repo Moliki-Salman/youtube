@@ -101,7 +101,8 @@ grid-template-columns: 100px 1fr 2fr : this means the 2fr will take double the r
 
 <!-- FLEX: unlike grid, flex only takes us the column space by default. Use  2  steps to create a flex .
  1- "display:flex" to set columns and rows to flex
- 2- flex-direction: row;
+ 2- flex-direction: row; displays element property  horizontally
+  2b- flex-direction: column; displays element property  vertically
 flex: 1is the equivalnet to 1fr in grid; flex: 2 is the equivalnet to 2fr in grid;
   -->
 <!-- DIFF BTWN FLEX AND GRID: Grid has rigid layout, while flex is flexible -->
@@ -110,7 +111,10 @@ flex: 1is the equivalnet to 1fr in grid; flex: 2 is the equivalnet to 2fr in gri
  Justify-content: end is to set element to the right
  justify-content: center is to set element to the center
  justify-content:space-between:is to give space btwn elements
-  -->
+
+ justify-content: center; /* centers item horizontally*/
+align-items: center; /* centers item vertically*/ -->
+
 <!-- flex-shrink: 0; helps item not to shrink when the adjust the browser, set to zero means no shrink. -->
 <!-- width: 0 , makes item shrink-->
 
@@ -142,3 +146,7 @@ flex: 1is the equivalnet to 1fr in grid; flex: 2 is the equivalnet to 2fr in gri
   <!-- position: relative: cause the element to display normally, when you scrow the page it acts normally"
    when position absolute is put on top of position relative, the  item will be  in a fixed position on top of the element that has relative position  and not on top the page and
    position relative causes the entire element to display normally.  -->
+
+<!-- pointer-events: none;/* disables the hover on the tooltip*/ -->
+
+<!-- prevent the text from wraping around the element -->

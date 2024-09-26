@@ -59,7 +59,6 @@
 
 .search-icon {
   height: 25px;
-  margin-top: 4px;
 }
 
 .search-button {
@@ -71,6 +70,41 @@
   /*negative number set to margin pull the border to the left*/
   margin-left: -1px;
   margin-right: 10px;
+}
+
+.search-button,
+.voice-search-button,
+.upload-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip {
+  font-family: Roboto, Arial;
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none; /* disables the hover on the tooltip*/
+  white-space: nowrap; /*prevent the text from wraping around the element*/
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip {
+  opacity: 1;
 }
 
 .voice-search-button {
@@ -119,12 +153,11 @@
   color: white;
   font-family: Roboto, Arial;
   font-size: 11px;
-padding-right: 5px;
-padding-left: 5px;
-padding-top: 2px;
-padding-bottom: 2px;
-border-radius: 10px;
-
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
 }
 .current-user-picture {
   height: 32px;

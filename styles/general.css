@@ -10,6 +10,9 @@ margin: 0;
 padding-top: 80px;
 /* padding  prevented the sidebar from covering the body image*/
 padding-left: 80px;
+padding-left:96px ;
+padding-right: 24px;
+background-color: rgb(248, 248, 248);
 border-bottom-width: 1px;
 border-bottom-style: solid;
 border-bottom-color: rgb(234, 234, 234);
